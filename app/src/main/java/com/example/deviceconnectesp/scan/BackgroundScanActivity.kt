@@ -54,7 +54,7 @@ class BackgroundScanActivity : AppCompatActivity() {
                     // add custom filters if needed
                     .build()
 
-                rxBleClient.backgroundScanner.scanBleDeviceInBackground(callbackIntent, scanSettings, scanFilter)
+                rxBleClient!!.backgroundScanner.scanBleDeviceInBackground(callbackIntent, scanSettings, scanFilter)
             } catch (scanException: BleScanException) {
                 Log.e("BackgroundScanActivity", "Failed to start background scan", scanException)
                 //showError(scanException)
@@ -74,7 +74,7 @@ class BackgroundScanActivity : AppCompatActivity() {
 
     private fun onScanStopClick() {
         if (Build.VERSION.SDK_INT >= 26 /* Build.VERSION_CODES.O */) {
-            rxBleClient.backgroundScanner.stopBackgroundBleScan(callbackIntent)
+            rxBleClient!!.backgroundScanner.stopBackgroundBleScan(callbackIntent)
         } else {
             //showSnackbarShort("Background scanning requires at least API 26")
             Log.i("Erro","Background scanning requires at least API 26" )

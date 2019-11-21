@@ -77,7 +77,7 @@ class ScanActivity : AppCompatActivity() {
             // add custom filters if needed
             .build()
 
-        return rxBleClient.scanBleDevices(scanSettings, scanFilter)
+        return rxBleClient!!.scanBleDevices(scanSettings, scanFilter)
     }
 
     private fun dispose() {

@@ -8,7 +8,7 @@ import com.polidea.rxandroidble2.RxBleClient
 class SampleApplication : Application() {
 
     companion object {
-        lateinit var rxBleClient: RxBleClient
+         var rxBleClient: RxBleClient? = null
             private set
     }
 

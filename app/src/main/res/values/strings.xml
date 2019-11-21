@@ -1,0 +1,11 @@
+<resources>
+    <string name="app_name">DeviceConnectEsp</string>
+    <string name="button_start_scan">Start Scan</string>
+    <string name="button_stop_scan">Stop Scan</string>
+    <string name="title_hello_bluetooth_world">Hello Bluetooth World!</string>
+    <string name="button_scan_in_background">Scan in Back</string>
+    <string name="title_service">Service</string>
+    <string name="button_connect">Conectar</string>
+    <string name="button_service_discovery">Service discover</string>
+
+</resources>
